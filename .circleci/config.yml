@@ -6,6 +6,6 @@ orbs:
 workflows:
    testing_orb:
      jobs:
-       - test-job:
+       test-job:
          steps:
            - test-orb/greet
