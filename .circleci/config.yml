@@ -9,4 +9,3 @@ workflows:
        - test-job:
          steps:
            - test-orb/greet
-             to: "Stranger"
