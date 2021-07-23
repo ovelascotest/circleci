@@ -1,0 +1,9 @@
+version: 2.1
+
+orbs:
+   test-orb: ovelascotest/test-orb@0.0.1
+   
+workflows:
+   testing_orb:
+     jobs:
+       - ovelascotest/test-orb
