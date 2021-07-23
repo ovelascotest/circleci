@@ -1,9 +1,12 @@
 version: 2.1
-
+  
 orbs:
-   test-orb: ovelascotest/test-orb@0.0.1
-   
+  test-orb: ovelascotest/test-orb@0.0.1
+
 workflows:
    testing_orb:
      jobs:
-       - ovelascotest/test-orb
+       - test-job:
+         steps:
+           - test-orb/greet
+             to: "Stranger"
